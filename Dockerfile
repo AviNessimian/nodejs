@@ -18,6 +18,10 @@ COPY src ./src
 RUN ls -a
 RUN npm run build
 
+
+ENV ENVIRONMENT=production
+ENV PORT=8000
+
 EXPOSE 8000
 USER node
 CMD ["npm", "run", "start"]
