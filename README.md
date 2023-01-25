@@ -1,4 +1,4 @@
-# nodejs
+# nodejs + typescript 2023 application template
 
 
 
