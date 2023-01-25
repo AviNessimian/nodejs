@@ -1,10 +1,13 @@
 import fs from 'fs';
 import express from "express";
 import { Request, Response } from 'express';
+import * as dotenv from 'dotenv'
+
 import { hey } from './core/placeholder.js';
 
-
-const port = 8000;
+dotenv.config()
+console.log(process.env.Environment) // remove this after you've confirmed it is working
+const port: number = 8000;
 const app: express.Application = express();
 
 
